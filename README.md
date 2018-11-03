@@ -44,6 +44,9 @@ For the application I've used [https://www.npmjs.com/package/http-server](https:
 >
 > http-server ./dist/angular-dynamic-demo
 
+## Running the modules directory remotely
+> http-server ./dist/angular-dynamic-demo/assets -p 8081 --cors
+
 
 ## Notes
 - Angular 6 uses RxJs 6. Install rxjs-compat before you can make use of the rxjs operators; [https://github.com/shlomiassaf/ngx-modialog/issues/426](https://github.com/shlomiassaf/ngx-modialog/issues/426)

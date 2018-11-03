@@ -54,7 +54,7 @@ export class ModuleService {
     }
 
     loadModuleSystemJS(moduleInfo: ModuleData): Promise<any> {
-        let url = this.source + moduleInfo.location;
+        let url = moduleInfo.location;
         SystemJS.set('@angular/core', SystemJS.newModule(AngularCore));
         SystemJS.set('@angular/common', SystemJS.newModule(AngularCommon));
         SystemJS.set('@angular/router', SystemJS.newModule(AngularRouter));
